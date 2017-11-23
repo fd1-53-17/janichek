@@ -1,0 +1,68 @@
+body{
+    font-family: sans-serif
+}
+.calendar{
+    position: relative;
+    width: 250px;
+}
+.calendar .header {
+    text-transform: uppercase;
+    text-align: center;
+    background: green;
+    color: #fff;
+    padding: 5px 0px 7px;
+    border-top: 5px solid green;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.calendar .date {
+    background: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px 10px;
+    position: relative;
+    min-height: 15px;
+}
+.calendar .date:before {
+    content: "◀";
+    color: green;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+}
+.calendar .date:after {
+    content: "▶";
+    color: green;
+    position: absolute;
+    right: 15px;
+    bottom: 8px;
+}
+
+.calendar ul.days {
+    background: #ddd;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+}
+.calendar .days li {
+    display: inline-block;
+    list-style-type: none;
+    float: left;
+    margin: 0;
+    padding: 5px 7px 5px 0;
+    width: 25px;
+    text-align: right;
+    font-weight: bold; 
+}
+.calendar .days li:after {
+    clear: both;
+}
+.calendar .days li.active,
+.calendar .days li:hover {
+    background: green;
+    color: #fff;
+    font-weight: normal;    
+}
+.calendar .days li.active ~ li {
+    font-weight: normal;
+}
