@@ -1,0 +1,60 @@
+.p1 {
+  width: 100px;
+  height: 50px;
+  background: transparent;
+  position: relative;
+  border-top: 10px solid red;
+  border-left: 10px solid violet;
+  border-right: 10px solid violet;
+  margin: 0 0 50px 0;
+  
+}
+
+.p1:after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: -10px;
+  height: 50px;
+  width: 100px;
+  background: transparent;
+  border-radius: 0 0 50px 50px;
+  border-bottom: 10px solid red;
+  border-left: 10px solid blue;
+  border-right: 10px solid blue;
+}
+
+.p2 {
+  width: 100px;
+  height: 50px;
+  background: white;
+  position: relative;
+  border-bottom: 10px solid red;
+  border-left: 10px solid violet;
+  border-right: 10px solid violet;
+  margin-top: 50px;
+  
+}
+.p2:before {
+  content: "";
+  position: absolute;
+  top:  -50px;
+  left: -10px;
+  height: 50px;
+  width: 100px;
+  background: transparent;
+  border-radius: 50px 50px 0 0;
+  border-top: 10px solid red;
+  border-left: 10px solid blue;
+  border-right: 10px solid blue;
+}
+
+.moon {
+width: 150px;
+height: 150px;
+border-radius: 90%;
+box-shadow: 10px 10px red; 
+transform: rotate(90deg);
+margin: 50px 0 0 100px;
+padding: 50px;
+}
